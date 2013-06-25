@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+} 
+
+/* reset */
+
+
+img { 
+	display: block; 
+	border: none; 
+} 
+
+/* IE */
+
+h1, h2, h3, h4, h5, h6 { 
+	font-weight: normal; 
+	line-height: 1; 
+	margin: 0; 
+	color: #282828 
+} 
+
+/* basics */
+
+p { 
+	margin-bottom: 20px; 
+} 
+
+#container {
+	width: 320px;
+	text-align: center;	
+	margin: auto;
+}

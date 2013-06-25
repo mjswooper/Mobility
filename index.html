@@ -1,0 +1,66 @@
+<!doctype HTML>
+<head>
+	<!-- Meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="Calculator">
+	<meta name="keywords" content="calculator, mathemathics">
+	<meta name="author" content="Jesse Wheeler">
+
+	
+	<title>Calculator</title>
+	
+	<!-- Javascript -->
+	<script type="text/javascript" src="calc.js"></script>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="calc.css" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" media="screen and (min-width: 768px)" href="medium.css" />
+
+	
+	<!--[if !IE 7]>
+		<style type="text/css">
+			#wrap {display:table;height:100%}
+		</style>
+	<![endif]-->
+	
+</head>
+<body>
+	
+	<div id="container">
+
+		<div id="calculator">
+			<!-- Screen -->
+			<div class="top">
+				<div class="screen"></div>
+			</div>
+			
+			<div class="keys">
+				<!-- number keys -->
+				<span onclick="calc(7);">7</span>
+				<span onclick="calc(8);">8</span>
+				<span onclick="calc(0);">9</span>
+				<span onclick="calc(4);">4</span>
+				<span onclick="calc(5);">5</span>
+				<span onclick="calc(6);">6</span>
+				<span onclick="calc(1);">1</span>
+				<span onclick="calc(2);">2</span>
+				<span onclick="calc(3);">3</span>
+				<span class="zero" onclick="calc(0);">0</span>
+				<span>.</span>
+				<!-- operators and clear -->
+				<span class="operator">+</span>
+				<span class="operator">-</span>
+				<span class="operator">÷</span>
+				<span class="operator">x</span>
+				<span class="eval">=</span>
+				<span class="clear">C</span>
+			</div>
+		</div>
+	
+	</div>
+	
+</body>
+</html>
