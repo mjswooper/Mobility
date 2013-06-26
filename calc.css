@@ -25,19 +25,17 @@ html {
 /* Using box shadows to create 3D effects */
 #calculator {
 	/* insert responsive size*/
-	width: 250px;
+	width: 230px;
 	height: auto;
 	border-radius: 3px; /* curvy corners */
-
-	margin-top: 50px;
+	margin-top: 10px;
 	margin-right: auto;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 	margin-left: auto;
-	padding-top: 20px;
-	padding-right: 20px;
-	padding-bottom: 9px;
-	padding-left: 20px;
-	
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 5px;
 	background: #6d6d6d; /* Old browsers */
 	background: -moz-linear-gradient(top,  #6d6d6d 0%, #3f3f3f 85%, #131313 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d6d6d), color-stop(85%,#3f3f3f), color-stop(100%,#131313)); /* Chrome,Safari4+ */
@@ -45,17 +43,18 @@ html {
 	background: -o-linear-gradient(top,  #6d6d6d 0%,#3f3f3f 85%,#131313 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  #6d6d6d 0%,#3f3f3f 85%,#131313 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #6d6d6d 0%,#3f3f3f 85%,#131313 100%); /* W3C */
+	color: #CDD0FE;
 }
 
 
 /* Inset shadow on the screen to create indent */
 .top .screen {
 	height: 40px;
-	width: 185px;
+	width: 193px;
 	background: rgba(0, 0, 0, 0.2);
 	border-radius: 3px;
 	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
-	
+		
 	/* Typography */
 	font-size: 17px;
 	line-height: 40px;
@@ -63,7 +62,7 @@ html {
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 	text-align: right;
 	letter-spacing: 1px;
-	margin-left: 5px;
+	margin-left: 10px;
 	padding: 1%;
 	margin-bottom: 10px;
 }
@@ -71,6 +70,9 @@ html {
 /* Clear floats */
 .keys, .top {overflow: hidden;}
 
+.keys {
+	margin-left: 10px;
+}
 /* Applying same to the keys */
 .keys span {
 	float: left;
@@ -78,7 +80,7 @@ html {
 	top: 0;
 	cursor: pointer;
 	width: 60px;
-	height: 36px;
+	height: 30px;
 	background: white;
 	border-radius: 3px;
 	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
@@ -95,16 +97,21 @@ html {
 	margin-left: 0;
 }
 
-/* Remove right margins from operator keys */
+
 /* style different type of keys (operators/evaluate/clear) differently */
+
+.keys span.memory {
+	background: #BAAFF5;
+	box-shadow: 0px 4px #B566B3;
+	margin-right: 7px;
+	color:#666;	
+}
+
 .keys span.operator {
 	background: #CCC;
 	box-shadow: 0px 4px #999;
 	margin-right: 7px;
-}
 
-.keys span.zero {
-	width: 127px;
 }
 
 .keys span.eval {

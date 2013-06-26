@@ -37,31 +37,33 @@
 				<div class="screen" id="screen"></div>
 			</div>
 			
-			<div class="keys">
+		  <div class="keys">
 				<!-- number keys -->
-				<span onclick="calc(7);">7</span>
-				<span onclick="calc(8);">8</span>
-				<span onclick="calc(9);">9</span>
-				<span onclick="calc(4);">4</span>
-				<span onclick="calc(5);">5</span>
-				<span onclick="calc(6);">6</span>
-				<span onclick="calc(1);">1</span>
-				<span onclick="calc(2);">2</span>
-				<span onclick="calc(3);">3</span>
-				<span class="zero" onclick="calc(0);">0</span>
-				<span onclick="calc('.');">.</span>
+				<span onClick="calc(7);">7</span>
+				<span onClick="calc(8);">8</span>
+				<span onClick="calc(9);">9</span>
+				<span onClick="calc(4);">4</span>
+				<span onClick="calc(5);">5</span>
+				<span onClick="calc(6);">6</span>
+				<span onClick="calc(1);">1</span>
+				<span onClick="calc(2);">2</span>
+				<span onClick="calc(3);">3</span>
+				<span class="zero" onClick="calc(0);">0</span>
+				<span onClick="calc('.');">.</span>
+                <!-- operators and clear -->
+                <span class="eval" onClick="equals();">=</span>
+				<span class="operator" onClick="operator('+');">+</span>
+				<span class="operator" onClick="operator('-');">-</span>
+				<span class="operator" onClick="operator('/');">/</span>
+				<span class="operator" onClick="operator('*');">*</span>
 				<!-- memory buttons -->
-				<span onclick="mem('m+');">M+</span>
-				<span onclick="mem('m-');">M-</span>
-				<span onclick="mem('mr');">MR</span>
-				<span onclick="mem('mc');">MC</span>
-				<!-- operators and clear -->
-				<span class="operator" onclick="operator('+');">+</span>
-				<span class="operator" onclick="operator('-');">-</span>
-				<span class="operator" onclick="operator('/');">/</span>
-				<span class="operator" onclick="operator('*');">*</span>
-				<span class="eval" onclick="equals();">=</span>
-				<span class="clear" onclick="clearCalc();">C</span>
+			<span class="memory" onClick="mem('m+');">M+</span>
+			<span class="memory" onClick="mem('m-');">M-</span>
+			<span class="memory" onClick="mem('mr');">MR</span>
+			<span class="memory" onClick="mem('mc');">MC</span>
+
+				
+				<span class="clear" onClick="clearCalc();">C</span>
 			</div>
 		</div>
 	
