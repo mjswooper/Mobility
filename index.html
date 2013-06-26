@@ -34,14 +34,14 @@
 		<div id="calculator">
 			<!-- Screen -->
 			<div class="top">
-				<div class="screen"></div>
+				<div class="screen" id="screen"></div>
 			</div>
 			
 			<div class="keys">
 				<!-- number keys -->
 				<span onclick="calc(7);">7</span>
 				<span onclick="calc(8);">8</span>
-				<span onclick="calc(0);">9</span>
+				<span onclick="calc(9);">9</span>
 				<span onclick="calc(4);">4</span>
 				<span onclick="calc(5);">5</span>
 				<span onclick="calc(6);">6</span>
@@ -49,14 +49,19 @@
 				<span onclick="calc(2);">2</span>
 				<span onclick="calc(3);">3</span>
 				<span class="zero" onclick="calc(0);">0</span>
-				<span>.</span>
+				<span onclick="calc('.');">.</span>
+				<!-- memory buttons -->
+				<span onclick="mem('m+');">M+</span>
+				<span onclick="mem('m-');">M-</span>
+				<span onclick="mem('mr');">MR</span>
+				<span onclick="mem('mc');">MC</span>
 				<!-- operators and clear -->
-				<span class="operator">+</span>
-				<span class="operator">-</span>
-				<span class="operator">÷</span>
-				<span class="operator">x</span>
-				<span class="eval">=</span>
-				<span class="clear">C</span>
+				<span class="operator" onclick="operator('+');">+</span>
+				<span class="operator" onclick="operator('-');">-</span>
+				<span class="operator" onclick="operator('/');">/</span>
+				<span class="operator" onclick="operator('*');">*</span>
+				<span class="eval" onclick="equals();">=</span>
+				<span class="clear" onclick="clearCalc();">C</span>
 			</div>
 		</div>
 	
