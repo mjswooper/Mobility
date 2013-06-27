@@ -1,0 +1,51 @@
+/* 
+This CSS Is to be used with the Calculator HTML file...
+	Builds off: Index.html, calc.css, width320.css.
+	By Jesse Wheeler 27 / 6 / 2013, Bond University - Mobility.
+
+*/
+
+
+@media screen and (min-width: 480px){
+    * {
+    	font: bold 36px Arial, sans-serif;
+    }
+ 
+    #container {
+    	width: 480px;
+		text-align: center;	
+		margin: auto;
+    }
+	
+	#calculator {
+		width: 455px;
+		height: auto;
+		border-radius: 3px; /* curvy corners */
+		margin-top: 50px;
+		margin-right: auto;
+		margin-bottom: 20px;
+		margin-left: auto;
+		padding-top: 20px;
+		padding-right: 5px;
+		padding-bottom: 20px;
+		padding-left: 5px;
+	}
+
+	.top .screen {
+		height: 80px;
+		width: 420px;
+		font-size: 60px;
+		padding-top: 24px;
+		padding-right: 20px;
+		margin-bottom: 30px;
+
+	}
+
+	.keys span {
+		width: 125px;
+		height: 60px; /* most stable */
+		padding-top: 15px;
+		margin-left: 8px;
+		margin-bottom: 14px;
+	}
+}

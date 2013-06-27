@@ -73,19 +73,37 @@ function calc(btnNum) {
 
 function operator(x) {
 	
-	//check if there was an operation prior:
-	if (calcOp != "") {
+	var  flag = false; //dirty hax flag to detect 3+3(+)3 - the second operator without equals.
+	alert("variables: " + firstNum + " " + calcOp + " " + secondNum + " " + result);
+	// if there is a 3+3+4
+	if  (firstNum != "" && calcOp != "" && secondNum !="") {
+			//evaluate the first two (3+3)
+			equals();
+			firstNum = result;
+			secondNum = ""; //house keeping.
+			result = "";
+			flag = true;
+	}	
+	//check if there was an operation prior: ie 3 + 5 = 15 + 5
+	else if (calcOp != "") {
 	// there was, shift values to firstNum
 	firstNum = result;
 	secondNum = ""; //house keeping.
 	result = "";
 	}
 	
+	
 	if ( x == "+" ) { calcOp = "+"; }
 	if ( x == "-" ) { calcOp = "-"; }
 	if ( x == "*" ) { calcOp = "*"; } //multiplication
 	if ( x == "/" ) { calcOp = "/"; } //division
-	display(1);
+	if  (flag == true) { 
+		display (calcOp); 
+	}
+	else { 
+		display(1); 
+	}
+	alert("variables: " + firstNum + " " + calcOp + " " + secondNum + " " + result);
 }
 
 function error() {
@@ -109,7 +127,7 @@ function equals() {
 		//in case the operator is still null, lets assume a zero
 		// thus 7 + not equals 7 + 0 as convention dictates. 
 		if (secondNum == "") { secondNum = 0; }
-		
+		alert("variables: 1st: " + firstNum + " " + calcOp + " 2nd: " + secondNum + " result: " + result);
 		result = eval(firstNum + calcOp + secondNum);
 		
 			display(result);	

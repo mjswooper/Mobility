@@ -1,0 +1,51 @@
+/* 
+This CSS Is to be used with the Calculator HTML file...
+	Builds off: Index.html, calc.css, width320.css & width480.css.
+	Design decision to not make specific css to nexus 7, 
+		justified by the fact it's only 40 pixels more
+	By Jesse Wheeler 27 / 6 / 2013, Bond University - Mobility.
+
+*/
+
+@media screen and (min-width: 768px){
+    * {
+    	font: bold 50px Arial, sans-serif;
+    }
+ 
+    #container {
+    	width: 760px;
+		text-align: center;	
+		margin: auto;
+    }
+	
+	#calculator {
+		width: 750px;
+		height: auto;
+		border-radius: 3px; /* curvy corners */
+		margin-top: 10px;
+		margin-right: auto;
+		margin-bottom: 20px;
+		margin-left: auto;
+		padding-top: 20px;
+		padding-right: 5px;
+		padding-bottom: 20px;
+		padding-left: 15px;
+	}
+
+	.top .screen {
+		height: 150px;
+		width: 680px;
+		font-size: 90px;
+		padding-top: 50px;
+		margin-bottom: 30px;
+		margin-left: 20px;
+	}
+
+	.keys span {
+		width: 204px;
+		height: 80px; /* most stable */
+		padding-top: 25px; 
+		margin-left: 19px;
+		margin-bottom: 16px;
+	}
+}

@@ -1,0 +1,41 @@
+@media screen and (min-width: 800px){
+    * {
+    	font: bold 60px Arial, sans-serif;
+    }
+ 
+    #container {
+    	width: 790px;
+		text-align: center;	
+		margin: auto;
+		padding-top: 10px;
+    }
+	
+	#calculator {
+		width: 790px;
+		height: auto;
+		border-radius: 3px; /* curvy corners */
+		margin-top: 5px;
+		margin-right: auto;
+		margin-bottom: 20px;
+		margin-left: auto;
+		padding-top: 10px;
+		padding-right: 5px;
+		padding-bottom: 20px;
+		padding-left: 15px;
+	}
+
+	.top .screen {
+		height: 150px;
+		width: 730px;
+		font-size: 100px;
+		margin-top: 15px;
+	}
+
+	.keys span {
+		width: 220px;
+		height: 90px; /* most stable */
+		padding-top: 30px; 
+		margin-left: 19px;
+		margin-bottom: 16px;
+	}
+}
