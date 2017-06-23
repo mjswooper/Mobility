@@ -73,8 +73,10 @@ function calc(btnNum) {
 
 function operator(x) {
 	
+	calcOp = x;
+	
 	var  flag = false; //dirty hax flag to detect 3+3(+)3 - the second operator without equals.
-	alert("variables: " + firstNum + " " + calcOp + " " + secondNum + " " + result);
+	//alert("variables: " + firstNum + " " + calcOp + " " + secondNum + " " + result);
 	// if there is a 3+3+4
 	if  (firstNum != "" && calcOp != "" && secondNum !="") {
 			//evaluate the first two (3+3)
@@ -103,7 +105,7 @@ function operator(x) {
 	else { 
 		display(1); 
 	}
-	alert("variables: " + firstNum + " " + calcOp + " " + secondNum + " " + result);
+	//alert("variables: " + firstNum + " " + calcOp + " " + secondNum + " " + result);
 }
 
 function error() {
@@ -127,7 +129,7 @@ function equals() {
 		//in case the operator is still null, lets assume a zero
 		// thus 7 + not equals 7 + 0 as convention dictates. 
 		if (secondNum == "") { secondNum = 0; }
-		alert("variables: 1st: " + firstNum + " " + calcOp + " 2nd: " + secondNum + " result: " + result);
+		//alert("variables: 1st: " + firstNum + " " + calcOp + " 2nd: " + secondNum + " result: " + result);
 		result = eval(firstNum + calcOp + secondNum);
 		
 			display(result);	
@@ -170,7 +172,7 @@ function mem(cmd) {
 
 	var latestNum = 0; //store the number to add to memory.
 	
-	alert(firstNum + " " + secondNum + " " + result);
+	//alert(firstNum + " " + secondNum + " " + result);
 
 	if (firstNum != "" && secondNum == "" && result == "") {
 		latestNum = parseInt(firstNum);
@@ -187,7 +189,7 @@ function mem(cmd) {
 		latestNum = calcMem;
 	}
 	else {
-		alert("error: latestNum - " + latestNum);
+		//alert("error: latestNum - " + latestNum);
 		error(); // failsafe catch all.
 		cmd = "";
 	}
@@ -195,16 +197,16 @@ function mem(cmd) {
 	
 	if (cmd == "m+") { 
 		calcMem = eval(calcMem + latestNum);
-		alert(calcMem + " " + latestNum);
+		//alert(calcMem + " " + latestNum);
 		}
 	
 	if (cmd == "m-") { 
 		calcMem = eval(calcMem - latestNum); 
-		alert(calcMem + " " + latestNum);
+		//alert(calcMem + " " + latestNum);
 		}
 
 	if (cmd == "mr") { display(latestNum); } //or just calcMem. keeps versatility and catch all.
-	alert(cmd);
+	//alert(cmd);
 	if (cmd == "mc") { calcMem = ""; }
 	
 	//alert(calcMem + " " + cmd);
